@@ -1,0 +1,14 @@
+.list {
+    display: flex;
+    list-style: none;
+    background-color: lightblue;
+     border: solid aqua;
+     border-width: auto;
+     border-radius: 15px;
+    margin-top: 0%;
+    padding: 1%;
+
+}
+.item {
+    margin-right: 2em;
+}
