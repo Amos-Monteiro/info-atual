@@ -1,0 +1,23 @@
+.container{
+    max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list{
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.item{
+
+    color: #555;
+}
+.titulo{
+    font-size: 30px;
+    color: black;
+}

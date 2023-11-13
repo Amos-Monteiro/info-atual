@@ -1,14 +1,15 @@
 
-body, html, #root {
+body {
   background-color: lightblue;
-  font-size: 20px;
-  padding: auto;
-  height: 100%;
-  
-
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-h1, h2, p {
-  text-align: center;
-  color: black;
-}
+
+
+
+
+

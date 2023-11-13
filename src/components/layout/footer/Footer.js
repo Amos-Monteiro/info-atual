@@ -6,8 +6,8 @@ function Footer(params) {
     return(
         
         
-        <ul class = {styles.container}>
-            <li class = {styles.item}>UniNassau</li>
+        <ul className = {styles.container}>
+            <li className = {styles.item}><img src='src/img/logo-uninassau.ico' alt='' /> UniNassau</li>
             
         </ul>
         
