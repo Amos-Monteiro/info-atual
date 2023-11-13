@@ -1,8 +1,10 @@
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #b8a1cd;
+    color: white;
+    text-align: center;
+    padding: 10px;
     list-style: none;
+
     
      
 

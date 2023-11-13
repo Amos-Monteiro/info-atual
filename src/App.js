@@ -5,6 +5,11 @@ import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
 // Paginas.
 import Inicio from './components/pages/Inicio/Inicio';
 import Equipe from './components/pages/Equipe/Equipe';
+import Ciencias from './components/pages/ciencia/Ciencias';
+import Economia from './components/pages/economia/Economia';
+import Esportes from './components/pages/esportes/Esportes';
+import Tecnologia from './components/pages/Tecnologia/Tecnologia';
+
 
 //Componentes. 
 import Navbar from './components/layout/navbar/Navbar';
@@ -18,11 +23,16 @@ function App() {
      <Routes>
         <Route path="/" element ={<Inicio/>}/>
 
+        <Route path="/esportes" element ={<Esportes/>}/>
+
+        <Route path="/ciencias" element ={<Ciencias/>}/>
+
+        <Route path="/tecnologia" element ={<Tecnologia/>}/>
+
+        <Route path="/economia" element ={<Economia/>}/>
+
         <Route path="/equipe" element ={<Equipe/>}/>
 
-
-
-      
      </Routes>
      <Footer/>
     </Router>
