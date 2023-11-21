@@ -13,8 +13,8 @@ function Inicio(params) {
     const  [news, setNews] = useState([]);
 
     useEffect(()=> {
-        const apiUrl = 'https://newsapi.org/v2/top-headlines?'
-        const apiKey ='3ba42d5484964184aed69fefe75e86a9 ';
+        const apiUrl ='https://newsapi.org/v2/top-headlines?'
+        const apiKey ='3ba42d5484964184aed69fefe75e86a9';
         const country = 'br'
         const category = 'general'
         const language = 'en'
@@ -32,10 +32,13 @@ function Inicio(params) {
 
     }, []);
     
+    
 
     return(
         
         <div className = {styles.conteiner}>
+
+            
             
             <h1 className={styles.titulo}> Principais Noticias </h1>
             <ul className={styles.list}>
@@ -43,10 +46,17 @@ function Inicio(params) {
                     <li className={styles.item} key={index}>
                         <h3>{article.title}</h3>
                         <p>{article.description}</p>
-                        <p>{article.content}</p>
+                        <p>Saiba mais: <a href={article.url} target="blank">{article.url}</a> </p>
+                        <p>Autor: {article.author}</p>
+                        <p>Publicado em: {article.publishedAt}</p>
+                        
+                        
+                        
                     </li>
 
                 ))}
+
+
             
                     
         

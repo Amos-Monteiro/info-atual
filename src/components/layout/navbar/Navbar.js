@@ -1,36 +1,61 @@
-import { Link } from "react-router-dom";
-import styles from './Navbar.module.css'
 
-function Navbar(params) {
+import  { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from 'reactstrap';
 
-    return(
-            <ul className ={styles.list}>
-                <li className ={styles.item}>
-                    <Link to = "/">Inicio </Link>
-                </li>
+function NavBar(props) {
+  const [collapsed, setCollapsed] = useState(true);
 
-                <li className ={styles.item}>
-                    <Link to ="/ciencias">Ciencias</Link>
-                </li>
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
-                <li className ={styles.item}>
-                    <Link to ="/economia">Economia</Link>
-                </li>
+  return (
+    <div>
+      <Navbar color="faded" light >
+        <NavbarBrand href="/" className="me-auto">
+          Inicio
+          
+        </NavbarBrand>
+        
+        <NavbarToggler onClick={toggleNavbar} className="me-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
+            <NavItem>
+              <NavLink href="/ciencias">Ciências</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/economia">
+                Economia
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/esportes">
+                Esportes
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/Tecnologia">
+                Tecnologia
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/equipe">
+                Equipe
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
 
-                <li className ={styles.item}>
-                    <Link to ="/esportes">Esportes</Link>
-                </li>
-
-                <li className ={styles.item}>
-                    <Link to ="/tecnologia">Tecnologia</Link>
-                </li>
-
-                <li className ={styles.item}>
-                    <Link to ="/equipe">Equipe</Link>
-                </li>
-            </ul>
-    )
-    
+    </div>
+  );
 }
 
-export default Navbar
+
+export default NavBar

@@ -12,13 +12,13 @@ import Tecnologia from './components/pages/Tecnologia/Tecnologia';
 
 
 //Componentes. 
-import Navbar from './components/layout/navbar/Navbar';
+import NavBar from './components/layout/navbar/Navbar';
 import Footer from './components/layout/footer/Footer';
 
 function App() {
   return (
     <Router>
-      <Navbar/>
+      <NavBar/>
     
      <Routes>
         <Route path="/" element ={<Inicio/>}/>

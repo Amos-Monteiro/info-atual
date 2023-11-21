@@ -37,13 +37,15 @@ function Tecnologia(params) {
         
         <div className = {styles.conteiner}>
             
-            <h1 className={styles.titulo}> Principais Noticias </h1>
+            <h1 className={styles.titulo}> Tecnologia </h1>
             <ul className={styles.list}>
                 {news.map((article, index) => (
                     <li className={styles.item} key={index}>
                         <h3>{article.title}</h3>
                         <p>{article.description}</p>
-                        <p>{article.content}</p>
+                        <p>Saiba mais: <a href={article.url} target="blank">{article.url}</a> </p>
+                        <p>Autor: {article.author}</p>
+                        <p>Publicado em: {article.publishedAt}</p>
                     </li>
 
                 ))}

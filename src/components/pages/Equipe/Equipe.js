@@ -7,6 +7,8 @@ function Equipe(params) {
     return (
         <div className='Conteiner'>
 
+            <h1>Equipe</h1>
+
         <div className="Amos">
             <p>Ola, eu sou Amós e desenvolvemos este projeto para a diciplina de Front-End Frameworks do 2° período de ADS da UniNassau.</p>
 
