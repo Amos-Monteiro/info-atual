@@ -1,0 +1,35 @@
+.container {
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: aqua; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+.item {
+    
+    font-weight: blue;
+    list-style: none;
+
+   
+    
+}
+
+
+.main-content {
+    margin-bottom: 100px;  
+}
+
+
+    
+     
+
+
+
+.item{
+    margin: 0 1em;
+    position: bottom;
+}
