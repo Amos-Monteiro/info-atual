@@ -2,15 +2,31 @@
     
     position: fixed;
     bottom: 0;
+<<<<<<< HEAD
+    left: -1%;
+    width: 100%;
+    background-color: lightblue ; 
+=======
     left: 0;
     width: 100%;
     background-color: aqua; 
+>>>>>>> feature1
     padding: 10px; 
     text-align: center; 
 }
 
 .item {
     
+<<<<<<< HEAD
+    font-weight: lightblue;
+    list-style: none;
+
+
+}
+
+
+
+=======
     font-weight: blue;
     list-style: none;
 
@@ -22,6 +38,7 @@
 .main-content {
     margin-bottom: 100px;  
 }
+>>>>>>> feature1
 
 
     

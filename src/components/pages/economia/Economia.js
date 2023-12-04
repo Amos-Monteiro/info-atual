@@ -2,6 +2,13 @@
 import {useEffect, useState} from "react";
 import axios from 'axios';
 
+<<<<<<< HEAD
+// import de formatação de data
+import { format } from 'date-fns';
+
+
+=======
+>>>>>>> feature1
 // import de estilos
 import styles from './economia.module.css'
 
@@ -31,6 +38,17 @@ function Economia(params) {
         });
 
     }, []);
+<<<<<<< HEAD
+
+     // função para formatar data
+
+     const formatarData = (data) => {
+
+        return format(new Date(data), 'dd/MM/yyyy HH:mm');
+    };
+   
+=======
+>>>>>>> feature1
     
 
     return(
@@ -39,6 +57,25 @@ function Economia(params) {
             
             <h1 className={styles.titulo}> Economia </h1>
             <ul className={styles.list}>
+<<<<<<< HEAD
+                
+                {news.map((article, index) => (
+                    <li className={styles.item} key={index}>
+                        <h3>{article.title}</h3>
+
+                        <p>{article.description}</p>
+
+                        <p>
+                            <a 
+                                href={article.url} target="blank">
+                                    Saiba mais
+                            </a> 
+                        </p>
+
+                        <p>Autor: {article.author}</p>
+
+                        <p>Publicado em: {formatarData(article.publishedAt)}</p>
+=======
                 {news.map((article, index) => (
                     <li className={styles.item} key={index}>
                         <h3>{article.title}</h3>
@@ -46,6 +83,7 @@ function Economia(params) {
                         <p>Saiba mais: <a href={article.url} target="blank">{article.url}</a> </p>
                         <p>Autor: {article.author}</p>
                         <p>Publicado em: {article.publishedAt}</p>
+>>>>>>> feature1
                     </li>
 
                 ))}

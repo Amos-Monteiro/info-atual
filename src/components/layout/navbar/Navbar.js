@@ -44,11 +44,15 @@ function NavBar(props) {
                 Tecnologia
               </NavLink>
             </NavItem>
+<<<<<<< HEAD
+            
+=======
             <NavItem>
               <NavLink href="/equipe">
                 Equipe
               </NavLink>
             </NavItem>
+>>>>>>> feature1
           </Nav>
         </Collapse>
       </Navbar>
