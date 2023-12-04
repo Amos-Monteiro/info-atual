@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 <<<<<<< Updated upstream
 import './index.css';
+<<<<<<< HEAD
 =======
 // import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 >>>>>>> Stashed changes
+=======
+import 'bootstrap/dist/css/bootstrap.min.css';
+>>>>>>> feature1
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

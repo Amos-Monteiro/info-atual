@@ -2,10 +2,13 @@
 import {useEffect, useState} from "react";
 import axios from 'axios';
 
+<<<<<<< HEAD
 // import de formatação de data
 import { format } from 'date-fns';
 
 
+=======
+>>>>>>> feature1
 // import de estilos
 import styles from './Tecnologia.module.css'
 
@@ -35,6 +38,7 @@ function Tecnologia(params) {
         });
 
     }, []);
+<<<<<<< HEAD
 
      // função para formatar data
 
@@ -42,6 +46,8 @@ function Tecnologia(params) {
 
         return format(new Date(data), 'dd/MM/yyyy HH:mm');
     };
+=======
+>>>>>>> feature1
     
 
     return(
@@ -54,6 +60,7 @@ function Tecnologia(params) {
                     <li className={styles.item} key={index}>
                         <h3>{article.title}</h3>
                         <p>{article.description}</p>
+<<<<<<< HEAD
 
                         <p> 
                             <a href={article.url} target="blank">Saiba mais</a> 
@@ -64,6 +71,11 @@ function Tecnologia(params) {
                         <p>
                             Publicado em: {formatarData(article.publishedAt)}
                         </p>
+=======
+                        <p>Saiba mais: <a href={article.url} target="blank">{article.url}</a> </p>
+                        <p>Autor: {article.author}</p>
+                        <p>Publicado em: {article.publishedAt}</p>
+>>>>>>> feature1
                     </li>
 
                 ))}

@@ -2,9 +2,12 @@
 import {useEffect, useState} from "react";
 import axios from 'axios';
 
+<<<<<<< HEAD
 // import de formatação de data
 import { format } from 'date-fns';
 
+=======
+>>>>>>> feature1
 // import de estilos
 import styles from './esportes.module.css'
 
@@ -34,6 +37,7 @@ function Esportes (params) {
         });
 
     }, []);
+<<<<<<< HEAD
 
     // função para formatar data
 
@@ -41,6 +45,8 @@ function Esportes (params) {
 
         return format(new Date(data), 'dd/MM/yyyy HH:mm');
     };
+=======
+>>>>>>> feature1
     
 
     return(
@@ -52,6 +58,7 @@ function Esportes (params) {
                 {news.map((article, index) => (
                     <li className={styles.item} key={index}>
                         <h3>{article.title}</h3>
+<<<<<<< HEAD
 
                         <p>{article.description}</p>
 
@@ -64,6 +71,12 @@ function Esportes (params) {
                         <p>
                             Publicado em: {formatarData(article.publishedAt)}
                         </p>
+=======
+                        <p>{article.description}</p>
+                        <p>Saiba mais: <a href={article.url} target="blank">{article.url}</a> </p>
+                        <p>Autor: {article.author}</p>
+                        <p>Publicado em: {article.publishedAt}</p>
+>>>>>>> feature1
                     </li>
 
                 ))}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from 'react';
 
 import styles from './Footer.module.css'
@@ -30,15 +31,27 @@ function Footer(params) {
 
 
 
+=======
+import styles from './Footer.module.css'
+
+
+function Footer(params) {
+
+>>>>>>> feature1
     return(
         
         
         <ul className = {styles.container}>
+<<<<<<< HEAD
             <li className={`${styles.item} ${styles.container}`}>
+=======
+            <li className={styles.item}>
+>>>>>>> feature1
                 <img 
                 src='/logo-uninassau.ico' 
                 alt='Logo UniNassau'
                 style={{width: '40px', heigth: '40px'}} 
+<<<<<<< HEAD
              /> 
               
              UniNassau
@@ -51,6 +64,9 @@ function Footer(params) {
       )}
              </li>
             
+=======
+             /> UniNassau</li>
+>>>>>>> feature1
 
             
         </ul>
