@@ -2,22 +2,16 @@
     
     position: fixed;
     bottom: 0;
-<<<<<<< HEAD
-    left: -1%;
-    width: 100%;
-    background-color: lightblue ; 
-=======
     left: 0;
     width: 100%;
-    background-color: aqua; 
->>>>>>> feature1
+    background-color: lightblue ; 
     padding: 10px; 
     text-align: center; 
 }
 
 .item {
     
-<<<<<<< HEAD
+
     font-weight: lightblue;
     list-style: none;
 
@@ -26,27 +20,20 @@
 
 
 
-=======
-    font-weight: blue;
-    list-style: none;
-
-   
-    
-}
-
-
-.main-content {
-    margin-bottom: 100px;  
-}
->>>>>>> feature1
-
-
-    
+.botaoRolagem {
+    background-color: blue; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    position: fixed; 
+    bottom: 0px; 
+    right: 20px; 
      
-
-
-
-.item{
-    margin: 0 1em;
-    position: bottom;
-}
+  
+  }
+  
+  
+ 
+  
